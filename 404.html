@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MTG SYSTEM</title>
+  <script src="app-bundle.js"></script>
+</head>
+<body>
+<script>
+  App.applyTheme();
+  const s = typeof Auth !== 'undefined' ? Auth.getSession() : null;
+  window.location.href = s ? 'dashboard.html' : 'index.html';
+</script>
+</body>
+</html>
